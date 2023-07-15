@@ -9,13 +9,16 @@ sources:
         description: the raw data of customers
         columns:
           - name: id
+            description: primary key of the source data
             tests:
               - unique
               - not_null
         
       - name: orders
+        description: the raw orders data
         columns:
           - name: id
+            description: primary key for the raw orders data
             tests:
               - unique
               - not_null      
