@@ -3,8 +3,10 @@ version: 2
 sources:
   - name: jaffle_shop
     database: dbt-tutorial
+    description: a clone of a postgres database
     tables:
       - name: customers
+        description: the raw data of customers
         columns:
           - name: id
             tests:
